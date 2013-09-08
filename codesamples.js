@@ -22,6 +22,7 @@ function init() {
 	$("#addCar").click(function(){
 	  console.log("hey baby");
       $("#raj").show();
+      setTimeout(function(){$("#raj_msg").html("<h4 style='color: blue;'>Taking Emeryville Exit..</h4><h2 style='color: red;'>STOPPED!!</h2>");},3000);
       return false;
     });
 	
