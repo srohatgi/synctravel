@@ -16,10 +16,17 @@ function init() {
 			el.addClass("closed");
 	});
 	
-	$("#sumeet").hide();
+	// $("#sumeet").hide(); 
+	$("#raj").hide();
 	
-	$("#add-car").click(function(){
-	  $("#sumeet").show();
+	$("#addCar").click(function(){
+	  console.log("hey baby");
+      $("#raj").show();
+      return false;
+    });
+	
+	$("#arch").click(function(){
+		$("#myCarousel").hide();
 	});
 }
 
