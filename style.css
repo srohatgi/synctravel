@@ -4,7 +4,7 @@
 
 body {
 	margin-top:100px;
-	background: url('GMLIB/themes/gmc/bg.png') fixed;
+	background: url('bg.jpg') fixed;
 	color:#EEE;
 	font-size:35px;
 }
@@ -76,3 +76,31 @@ p {
 	display: table-cell;
 	padding: 0 8px 0 4px;
 }
+
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 100px;
+
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  margin-top: -90px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	top: 50px;
+  height: 500px;
+  /*background-color: #777;*/
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 100;
+  left: 40;
+  /*min-width: 100%;
+  height: 500px;*/
+}
+

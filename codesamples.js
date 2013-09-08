@@ -16,7 +16,11 @@ function init() {
 			el.addClass("closed");
 	});
 	
+	$("#sumeet").hide();
 	
+	$("#add-car").click(function(){
+	  $("#sumeet").show();
+	});
 }
 
 function otherUiControls() {

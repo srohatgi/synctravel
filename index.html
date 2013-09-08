@@ -15,61 +15,54 @@
 		<script type="text/javascript" src="GMLIB/ui.js"></script>
 		<script type="text/javascript" src="GMLIB/voice.js"></script>
 		<script type="text/javascript" src="codesamples.js"></script>
-		<link rel="stylesheet" href="style.css" type="text/css"/>
 		<link rel="stylesheet" href="bootstrap.min.css"/> 
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     </head>
     <body onload="gm.system.init();javascript:init()">
     
-    <h2>Sync Travel</h2>
-
-    <div>
-      <button type="button" class="btn btn-primary" data-toggle="button">Start Trip</button>    
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Your Summer Caravan</h1><h1 style="color: #00FF00;">FIXED</h1>
+              <img src="cars-lost.jpg" width="200" height="200">
+              <p><a class="btn btn-large btn-primary" href="#">Get started</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <p>
-    <center><strong>AWESOME</strong> connected family trip!</center>
-    </p>
-
-    <div class="media">
+    
+    <div class="media" id="raj">
       <a class="pull-left" href="#">
         <img class="media-object" src="camaro-png.png" height="128" width="256">
       </a>
       <div class="media-body">
-        <h4 class="media-heading">Raj's Car</h4>
+        <h3 class="media-heading">Driver: Raj</h3>
+        <h4>Car driving at 55 mph, on I-80 E</h4>
       </div>
-      <p>hello</p>
     </div>
 
-    <div class="media">
+    <div class="media" id="sumeet">
       <a class="pull-left" href="#">
         <img class="media-object" src="chevy-truck.png" height="200" width="256">
       </a>
       <div class="media-body">
         <h4 class="media-heading">Sumeet's Car</h4>
+        <p>Car driving at 55 mph, on I-80 E</p>
       </div>
-      <p>hello</p>
     </div>
 
-    <div class="group">
-      <div class="title">
-      Add New Car (Family)
+    <form class="form-inline" role="form">
+      <div class="form-group">
+        <input type="tel" class="form-control" id="exampleInputEmail2" placeholder="Mobile Number">
       </div>
-      <div class="field">
-        <h4>Mobile #</h4><input type="text">
-        <div id="twilio-button"></div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-default" id="add-car">Add Car</button>
       </div>
-    </div>
-    
-    <div class="group">
-      <div class="title">
-      Announce Message to ALL!
-      </div>
-      <div class="field">
-        <h4>Message:</h4><input type="text"></input>
-        <input type="button"></input>
-      </div>
-    </div>    
-    
+    </form>    
     
     <script src="jquery.js"></script>
     <script src="bootstrap.min.js"></script>

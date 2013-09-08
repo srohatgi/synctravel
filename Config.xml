@@ -7,7 +7,7 @@
 	<AutoStart>false</AutoStart>
 	<AppCategory>General</AppCategory>
 	<RemotePath></RemotePath>
-	<IconURL>Icon.png</IconURL>
+	<IconURL>cars-2-pit-crew.jpg</IconURL>
 	<MainURL>index.html</MainURL>
 	<AppVersion>0.1.0</AppVersion>
 </gmWebApp>
